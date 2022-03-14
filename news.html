@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+	<link rel="icon" type="png" href="img/logo/iGEM_Thessaly_2019_logo.png">
+    <title>iGEM Thessaly</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.min.css" rel="stylesheet">
+	
+	<style>
+	
+	.card {
+	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	  width: 100vw;
+	  font-family: Segoe UI;
+	}
+	
+	
+	
+	
+	.my-v-header{
+	  height:100vh;
+	  display:flex;
+	  align-items:center;
+	  color:#fff;
+	}
+
+	.my-container{
+	  align-items:center;
+	  margin:auto;
+	}
+
+	.my-fullscreen-video-wrap{
+	  position:absolute;
+	  top:0;
+	  left:0;
+	  width:98.65vw;
+	  height:100vh;
+	  overflow:hidden;
+	}
+
+	.my-fullscreen-video-wrap video{
+	  min-height:100%;
+	  min-width:100%;
+	}
+
+	.my-header-overlay{
+	  height:100vh;
+	  position: absolute;
+	  top:0;
+	  left:0;
+	  width:98.65vw;
+	  z-index:1;
+	  background:transparent;
+	  opacity:1;
+	}
+
+	.my-header-content{
+	  padding-top:128px;
+	  z-index:2;
+	}
+	
+	.my_mySlides {display: none;}
+	
+	.my_mySlides2 {display: none;}
+	
+	.my_mySlides3 {display: none;}
+
+	.my_mySlides4 {display: none;}
+		
+	.my_mySlides5 {display: none;}
+			
+	.my_mySlides6 {display: none;}
+	
+	.my_mySlides7 {display: none;}
+	
+	.my_mySlides8 {display: none;}
+	
+	.my_mySlides9 {display: none;}
+
+	.my_mySlides10 {display: none;}
+	
+	.my_mySlides11 {display: none;}	
+	
+	.my_mySlides12 {display: none;}	
+	
+	.my_mySlides13 {display: none;}	
+
+	/* Slideshow container */
+	.my_slideshow-container {
+	  max-width: 1000px;
+	  position: relative;
+	  margin: auto;
+	}
+
+	/* Caption text */
+	.my_text {
+	  color: #f2f2f2;
+	  font-size: 15px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  bottom: 8px;
+	  width: 100%;
+	  text-align: center;
+	}
+
+	/* Number text (1/3 etc) */
+	.my_numbertext {
+	  color: #f2f2f2;
+	  font-size: 12px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  top: 0;
+	}
+
+	/* The dots/bullets/indicators */
+	.my_dot {
+	  height: 15px;
+	  width: 15px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+	
+	.my_dot2 {
+	  height: 15px;
+	  width: 15px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+	
+	.my_dot3 {
+	  height: 15px;
+	  width: 15px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+	
+	.my_dot4 {
+	  height: 15px;
+	  width: 15px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+	
+	.my_dot5 {
+	  height: 15px;
+	  width: 15px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+	
+	.my_dot6 {
+	  height: 15px;
+	  width: 15px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+	
+	.my_dot7 {
+	  height: 15px;
+	  width: 15px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+	
+	.my_dot8 {
+	  height: 15px;
+	  width: 15px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+	
+	.my_dot9 {
+	  height: 15px;
+	  width: 15px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+	
+	.my_dot10 {
+	  height: 15px;
+	  width: 15px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+	
+	.my_dot11 {
+	  height: 15px;
+	  width: 15px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}	
+	
+	.my_dot12 {
+	  height: 15px;
+	  width: 15px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}	
+	
+	.my_dot13 {
+	  height: 15px;
+	  width: 15px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+
+	.my_active {
+	  background-color: #717171;
+	}
+
+	/* Fading animation */
+	.my_fade {
+	  -webkit-animation-name: my_fade;
+	  -webkit-animation-duration: 2s;
+	  animation-name: my_fade;
+	  animation-duration: 2s;
+	}
+
+	@-webkit-keyframes my_fade {
+	  from {opacity: .5} 
+	  to {opacity: 1}
+	}
+
+	@keyframes my_fade {
+	  from {opacity: .5} 
+	  to {opacity: 1}
+	}
+	</style>
+	
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="index.html#page-top"><img src="img/logo/iGEM_Thessaly_2019_logo.png" width="75px"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.html#page-top">HOME</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.html#news">NEWS</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.html#comp">iGEM COMPETITION</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.html#team">TEAM</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.html#project">PROJECT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.html#support">SUPPORTERS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.html#contact">CONTACT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="https://www.giveandfund.com/giveandfund/project/iGEM-Thessaly" target="_blank">DONATE</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index_gr.html"><img src="img/lang/gr.png" width="20px"></a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.html"><img src="img/lang/uk.png" width="20px"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+   
+	
+	
+	
+	<header class="masthead text-center  mx-auto p-0" id="home">
+	<section class=""  style="">
+      <div class="container-fluid mx-auto">
+	 	<br><br>
+		<div class="row no-gutters mx-auto">
+			<div class="card bg-primary text-center">
+			<br>
+			
+			<div class="my_slideshow-container">
+
+				<div class="my_mySlides13 my_fade">
+				  <img src="img/news/13/a.jpg" style="max-height:30vh; max-width:50vw">
+				  <div class="my_text"></div>
+				</div>
+
+				<div class="my_mySlides13 my_fade">
+				  <img src="img/news/13/b.jpg" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+				
+				<div class="my_mySlides13 my_fade">
+				  <img src="img/news/13/c.jpg" style="max-height:30vh; max-width:50vw">
+				  <div class="my_text"></div>
+				</div>
+				
+				<div class="my_mySlides13 my_fade">
+				  <img src="img/news/13/d.jpg" style="max-height:30vh; max-width:50vw">
+				  <div class="my_text"></div>
+				</div>
+				
+				<div class="my_mySlides13 my_fade">
+				  <img src="img/news/13/e.jpg" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+				
+				<div class="my_mySlides13 my_fade">
+				  <img src="img/news/13/f.jpg" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+
+			</div>
+			
+			<div style="text-align:center">
+			  <span class="my_dot13"></span> 
+			  <span class="my_dot13"></span> 
+			  <span class="my_dot13"></span> 
+			  <span class="my_dot13"></span> 
+			  <span class="my_dot13"></span>
+			  <span class="my_dot13"></span>
+			</div>
+			
+				<br>
+				<div class="row no-gutters">
+				<div class="col-lg-8 mx-auto text-center">
+					<h5 class="section-heading text-white" style="text-align:center">10/05/2019</h5>
+					<hr class="light my-1">
+					<h3 class="section-heading text-white">Participation of our team in the 25th SCHMS</h1>
+					<br>
+					<p class="text-faded mb-4">On Friday, May 10th, the 25th Scientific Congress of Hellenic Medical Students was held, at the Thessaloniki Concert Hall. Our team, in collaboration with iGEM Athens 2019 and iGEM Thessaloniki 2019, presented to medicine students different aspects of Synthetic Biology and the competition. The audience showedremarkable interest in the new challenges for the scientific community that both Synthetic Biology and the iGEM competition bring</p>
+				</div>
+				</div>
+			</div>
+		</div>
+		
+	 	<br><br>
+		<div class="row no-gutters mx-auto">
+			<div class="card bg-primary text-center">
+			<br>
+			
+			<div class="my_slideshow-container">
+
+				<div class="my_mySlides12 my_fade">
+				  <img src="img/news/12/a.jpg" style="max-height:30vh; max-width:50vw">
+				  <div class="my_text"></div>
+				</div>
+
+				<div class="my_mySlides12 my_fade">
+				  <img src="img/news/12/b.jpg" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+				
+				<div class="my_mySlides12 my_fade">
+				  <img src="img/news/12/c.jpg" style="max-height:30vh; max-width:50vw">
+				  <div class="my_text"></div>
+				</div>
+				
+				<div class="my_mySlides12 my_fade">
+				  <img src="img/news/12/d.jpg" style="max-height:30vh; max-width:50vw">
+				  <div class="my_text"></div>
+				</div>
+				
+				<div class="my_mySlides12 my_fade">
+				  <img src="img/news/12/e.jpg" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+
+			</div>
+			
+			<div style="text-align:center">
+			  <span class="my_dot12"></span> 
+			  <span class="my_dot12"></span> 
+			  <span class="my_dot12"></span> 
+			  <span class="my_dot12"></span> 
+			  <span class="my_dot12"></span>
+			</div>
+			
+				<br>
+				<div class="row no-gutters">
+				<div class="col-lg-8 mx-auto text-center">
+					<h5 class="section-heading text-white" style="text-align:center">9/05/2019</h5>
+					<hr class="light my-1">
+					<h3 class="section-heading text-white">SynArt: When Art Meets Tuberculosis</h1>
+					<br>
+					<p class="text-faded mb-4">On Thursday, May 9th, our team organized the first SynArt by iGEM Thessaly event at the theatre of the Mill of Pappas, titled "When Art Meets Tuberculosis". The event started with the speech "The History of Tuberculosis" by Irini Gerogianni of the 1st Pulmonology Clinic of the University of Thessaly. Our team presented and discussed with the audience the iGEM competition, Synthetic Biology, as well as our research proposal. During the event, the audience enjoyed a saxophone solo by Thodoris Repanas and the documentary "A breath of Life", directed by Dimitris Vernikos and Poly Vlachou.</p>
+					<p class="text-faded mb-4">The event was organized, in collaboration with the Pulmonology Clinic of the University of Thessaly and the Thessaliko Theater. The turnout was significant, and people were very interested in our research work.</p>
+				</div>
+				</div>
+			</div>
+		</div>
+	  
+	 	<br><br>
+		<div class="row no-gutters mx-auto">
+			<div class="card bg-primary text-center">
+			<br>
+			
+			<div class="my_slideshow-container">
+
+				<div class="my_mySlides11 my_fade">
+				  <img src="img/news/11/a.jpg" style="max-height:30vh; max-width:50vw">
+				  <div class="my_text"></div>
+				</div>
+
+				<div class="my_mySlides11 my_fade">
+				  <img src="img/news/11/b.jpg" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+				
+				<div class="my_mySlides11 my_fade">
+				  <img src="img/news/11/c.jpg" style="max-height:30vh; max-width:50vw">
+				  <div class="my_text"></div>
+				</div>
+				
+				<div class="my_mySlides11 my_fade">
+				  <img src="img/news/11/d.jpg" style="max-height:30vh; max-width:50vw">
+				  <div class="my_text"></div>
+				</div>
+				
+				<div class="my_mySlides11 my_fade">
+				  <img src="img/news/11/e.jpg" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+
+				<div class="my_mySlides11 my_fade">
+				  <img src="img/news/11/f.jpg" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+				
+				<div class="my_mySlides11 my_fade">
+				  <img src="img/news/11/g.jpg" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+				
+				<div class="my_mySlides11 my_fade">
+				  <img src="img/news/11/h.jpg" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+				
+				<div class="my_mySlides11 my_fade">
+				  <img src="img/news/11/i.jpg" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+
+			</div>
+			
+			<div style="text-align:center">
+			  <span class="my_dot11"></span> 
+			  <span class="my_dot11"></span> 
+			  <span class="my_dot11"></span> 
+			  <span class="my_dot11"></span> 
+			  <span class="my_dot11"></span> 
+			  <span class="my_dot11"></span> 
+			  <span class="my_dot11"></span> 
+			  <span class="my_dot11"></span> 
+			  <span class="my_dot11"></span> 
+			</div>
+			
+				<br>
+				<div class="row no-gutters">
+				<div class="col-lg-8 mx-auto text-center">
+					<h5 class="section-heading text-white" style="text-align:center">10/4/2019</h5>
+					<hr class="light my-1">
+					<h3 class="section-heading text-white">Students of the Danish Refugee School at the "Open Doors 2019"</h1>
+					<br>
+					<p class="text-faded mb-4">Education is for everyone, therefore on Wednesday, April 10th, we were delighted to welcome students from the temporary accommodation center "Koutsochero" in the framework of the "Open Doors 2019" programme of the Department of Biochemistry and Biotechnology. The children played the game "Bringing the Pieces of Life Together" cheerfully and managed to successfully combine all the pieces and come in contact with basic ideas and principles of Synthetic Biology. However, we did not just stay on it. On the yard of the faculty, we interacted with the students through "get to know" games, along with the teachers of the Danish Refugee Council (DRC).</p>
+					<p class="text-faded mb-4">Along with our actions regarding the DRC students, the students of the Larissa Second Chance Prison School were informed about Synthetic Biology and our effort, through an online tour of the Department of Biochemistry and Biotechnology.</p>
+				</div>
+				</div>
+			</div>
+		</div>
+	  
+	   <br><br>
+		<div class="row no-gutters mx-auto">
+			<div class="card bg-primary text-center">
+			<br>
+			
+			<div class="my_slideshow-container">
+
+				<div class="my_mySlides10 my_fade">
+				  <img src="img/news/10/a.jpg" style="max-height:30vh; max-width:50vw">
+				  <div class="my_text"></div>
+				</div>
+
+				<div class="my_mySlides10 my_fade">
+				  <img src="img/news/10/b.jpg" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+				
+				<div class="my_mySlides10 my_fade">
+				  <img src="img/news/10/c.jpg" style="max-height:30vh; max-width:50vw">
+				  <div class="my_text"></div>
+				</div>
+				
+				<div class="my_mySlides10 my_fade">
+				  <img src="img/news/10/d.jpg" style="max-height:30vh; max-width:50vw">
+				  <div class="my_text"></div>
+				</div>
+				
+				<div class="my_mySlides10 my_fade">
+				  <img src="img/news/10/e.jpg" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+
+			</div>
+			
+			<div style="text-align:center">
+			  <span class="my_dot10"></span> 
+			  <span class="my_dot10"></span> 
+			  <span class="my_dot10"></span> 
+			  <span class="my_dot10"></span> 
+			  <span class="my_dot10"></span> 
+			</div>
+			
+				<br>
+				<div class="row no-gutters">
+				<div class="col-lg-8 mx-auto text-center">
+					<h5 class="section-heading text-white" style="text-align:center">7/4/2019</h5>
+					<hr class="light my-1">
+					<h3 class="section-heading text-white">SYNvivor: The Ultimate Game of Synthetic Biology at the Athens Science Festival 2019</h1>
+					<br>
+					<p class="text-faded mb-4">Our team was in Technopolis, in Athens, from 3rd to 5th of April, to participate in the Athens Science Festival 2019. There, we presented a new game of Synthetic Biology, designed particularly for junior high school and high school students. "SYNvivor" gave students the opportunity to discover the world of Synthetic Biology in an active and entertaining way, by combining mathematics, puzzles, and books, while developing the spirit of collaboration to achieve their common "final goal"; to bring the pieces of life together. As knowledge is a two-way process, our team members received many lessons from the students themselves, who, with their spirit and creativity, gave us new ideas and suggestions for our next actions.</p>
+					<p class="text-faded mb-4">You can find more information about the Athens Science Festival <a href="http://www.athens-science-festival.gr/en/" target="_blank" style="color: white; font-family: Segoe UI"> here </a></p>
+				</div>
+				</div>
+			</div>
+		</div>
+	  
+	   <br><br>
+		<div class="row no-gutters mx-auto">
+			<div class="card bg-primary text-center">
+			<br>
+			
+			<div class="my_slideshow-container">
+
+				<div class="my_mySlides9 my_fade">
+				  <img src="img/news/9/a.jpg" style="max-height:30vh; max-width:50vw">
+				  <div class="my_text"></div>
+				</div>
+
+				<div class="my_mySlides9 my_fade">
+				  <img src="img/news/9/b.jpg" style="max-height:30vh; max-width:50vw">
+				  <div class="my_text"></div>
+				</div>
+				
+				<div class="my_mySlides9 my_fade">
+				  <img src="img/news/9/c.jpg" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+
+			</div>
+			
+			<div style="text-align:center">
+			  <span class="my_dot9"></span> 
+			  <span class="my_dot9"></span> 
+			  <span class="my_dot9"></span> 
+			</div>
+			
+				<br>
+				<div class="row no-gutters">
+				<div class="col-lg-8 mx-auto text-center">
+					<h5 class="section-heading text-white" style="text-align:center">3/4/2019</h5>
+					<hr class="light my-1">
+					<h3 class="section-heading text-white">Presenting our research project at the Biomedical Research Foundation of the Academy of Athens</h1>
+					<br>
+					<p class="text-faded mb-4">On Wednesday, April 3rd, our team, focusing on the interconnection of our research project and the actions of the iGEM competition with the society and scientific community of our country, delivered a speech at the Institute of Biomedical Research of the Academy of Athens (BRFAA). During the speech, the research teams of the BRFAA were informed about the principles of Synthetic Biology, the iGEM competition, and our research proposal. After the presentation, distinguished scientists from the foundation discussed with us their observations and ideas on the experimental design of our project and gave us wishes for success in the competition. We are very grateful to all of the BRFAA researchers who watched our speech and were interested in our work.</p>
+				</div>
+				</div>
+			</div>
+		</div>
+	  
+	   <br><br>
+		<div class="row no-gutters mx-auto">
+			<div class="card bg-primary text-center">
+			<br>
+			
+			<div class="my_slideshow-container">
+
+				<div class="my_mySlides8 my_fade">
+				  <img src="img/news/8/a.jpg" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+
+				<div class="my_mySlides8 my_fade">
+				  <img src="img/news/8/b.jpg" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+				
+				<div class="my_mySlides8 my_fade">
+				  <img src="img/news/8/c.jpg" style="max-height:30vh; max-width:50vw">
+				  <div class="my_text"></div>
+				</div>
+
+				<div class="my_mySlides8 my_fade">
+				  <img src="img/news/8/d.jpg" style="max-height:30vh; max-width:50vw">
+				  <div class="my_text"></div>
+				</div>
+				
+				<div class="my_mySlides8 my_fade">
+				  <img src="img/news/8/e.jpg" style="max-height:30vh; max-width:50vw">
+				  <div class="my_text"></div>
+				</div>
+
+			</div>
+			
+			<div style="text-align:center">
+			  <span class="my_dot8"></span> 
+			  <span class="my_dot8"></span> 
+			  <span class="my_dot8"></span> 
+			  <span class="my_dot8"></span> 
+			  <span class="my_dot8"></span> 
+			</div>
+			
+				<br>
+				<div class="row no-gutters">
+				<div class="col-lg-8 mx-auto text-center">
+					<h5 class="section-heading text-white" style="text-align:center">1/4/2019</h5>
+					<hr class="light my-1">
+					<h3 class="section-heading text-white">Participation of our team in the first conference of Synthetic Biology in Cyprus</h1>
+					<br>
+					<p class="text-faded mb-4">The first Conference of Synthetic Biology in Cyprus took place at the University of Nicosia on Friday 29 and Saturday, March 30, organized by After iGEM, the School of Molecular Medicine and the Institute of Neurology and Genetics. Members of our team actively participated in the conference, giving a speech about the course of the iGEM competition in our country from 2017 until today and at the same time presenting the progress of our research project. During the conference, we attended speeches by great scientists in the field of Synthetic Biology, and we had the pleasure to interact with former members of iGEM teams. The experience of our team was unique and inspired us with new ideas for our course in the competition. We would like to thank the Ambassador of iGEM in Europe and our friend, Thea Chrysostomou, for the invitation and the impeccable hospitality.</p>
+					<p class="text-faded mb-4">For more information about the conference visit <a href="http://synbiocyprustc.com/ " target="_blank" style="color: white; font-family: Segoe UI"> the website </a></p>
+				</div>
+				</div>
+			</div>
+		</div>
+	  
+	   <br><br>
+		<div class="row no-gutters mx-auto">
+			<div class="card bg-primary text-center">
+			<br>
+			
+			<div class="my_slideshow-container">
+
+				<div class="my_mySlides7 my_fade">
+				  <img src="img/news/7/a.jpg" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+
+				<div class="my_mySlides7 my_fade">
+				  <img src="img/news/7/b.jpg" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+				
+				<div class="my_mySlides7 my_fade">
+				  <img src="img/news/7/c.jpg" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+
+				<div class="my_mySlides7 my_fade">
+				  <img src="img/news/7/d.jpg" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+				
+				<div class="my_mySlides7 my_fade">
+				  <img src="img/news/7/e.jpg" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+
+			</div>
+			
+			<div style="text-align:center">
+			  <span class="my_dot7"></span> 
+			  <span class="my_dot7"></span> 
+			  <span class="my_dot7"></span> 
+			  <span class="my_dot7"></span> 
+			  <span class="my_dot7"></span> 
+			</div>
+			
+				<br>
+				<div class="row no-gutters">
+				<div class="col-lg-8 mx-auto text-center">
+					<h5 class="section-heading text-white" style="text-align:center">27/03/2019</h5>
+					<hr class="light my-1">
+					<h3 class="section-heading text-white">Project Reveal; Presentation of our research project</h1>
+					<br>
+					<p class="text-faded mb-4">On Wednesday, March 27th, our team presented its complete research proposal for the iGEM 2019 competition at the Department of Biochemistry and Biotechnology of the University of Thessaly. Many professors and students attended the event, in order to learn about the team's progress and future goals and share with us their views and remarks on our work.</p>
+				</div>
+				</div>
+			</div>
+		</div>
+	  
+	   <br><br>
+		<div class="row no-gutters mx-auto">
+			<div class="card bg-primary text-center">
+			<br>
+			
+			<div class="my_slideshow-container">
+
+				<div class="my_mySlides6 my_fade">
+				  <img src="img/news/6/a.jpg" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+
+				<div class="my_mySlides6 my_fade">
+				  <img src="img/news/6/b.jpg" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+				
+				<div class="my_mySlides6 my_fade">
+				  <img src="img/news/6/c.jpg" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+
+				<div class="my_mySlides6 my_fade">
+				  <img src="img/news/6/d.jpg" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+				
+				<div class="my_mySlides6 my_fade">
+				  <img src="img/news/6/e.jpg" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+
+			</div>
+			
+			<div style="text-align:center">
+			  <span class="my_dot6"></span> 
+			  <span class="my_dot6"></span> 
+			  <span class="my_dot6"></span> 
+			  <span class="my_dot6"></span> 
+			  <span class="my_dot6"></span> 
+			</div>
+			
+				<br>
+				<div class="row no-gutters">
+				<div class="col-lg-8 mx-auto text-center">
+					<h5 class="section-heading text-white" style="text-align:center">24/03/2019</h5>
+					<hr class="light my-1">
+					<h3 class="section-heading text-white">World Tuberculosis Day 2019; it's time to END TB!</h1>
+					<br>
+					<p class="text-faded mb-4">On Sunday, March 24th, on the occasion of the World Tuberculosis Day, our team organized an event in the central square of Larissa. Our goal was to inform the public and raise awareness of tuberculosis. At the same time, passers-by also acted in turn and made a statement to "END TUBERCULOSIS" in a creative way.</p>
+				</div>
+				</div>
+			</div>
+		</div>
+	
+	
+	  	 <br><br>
+		<div class="row no-gutters mx-auto">
+			<div class="card bg-primary text-center">
+			<br>
+			
+			<div class="my_slideshow-container">
+
+				<div class="my_mySlides4 my_fade">
+				  <img src="img/news/5/p.JPG" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+
+				<div class="my_mySlides4 my_fade">
+				  <img src="img/news/5/q.JPG" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+				
+				<div class="my_mySlides4 my_fade">
+				  <img src="img/news/5/r.JPG" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+
+				<div class="my_mySlides4 my_fade">
+				  <img src="img/news/5/s.JPG" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+				
+				<div class="my_mySlides4 my_fade">
+				  <img src="img/news/5/t.jpg" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+
+			</div>
+			
+			<div style="text-align:center">
+			  <span class="my_dot4"></span> 
+			  <span class="my_dot4"></span> 
+			  <span class="my_dot4"></span> 
+			  <span class="my_dot4"></span> 
+			  <span class="my_dot4"></span> 
+			</div>
+			
+				<br>
+				<div class="row no-gutters">
+				<div class="col-lg-8 mx-auto text-center">
+					<h5 class="section-heading text-white" style="text-align:center">8-3-2019</h5>
+					<hr class="light my-1">
+					<h3 class="section-heading text-white">Our team participated in the “Open Days 2019” of the University of Thessaly.</h1>
+					<br>
+					<p class="text-faded mb-4">In an attempt to bring high school and junior high school students in contact with the Department of Biochemistry and Biotechnology, our team participated actively in the “Open Days”, organized by the University of Thessaly. We conducted a workshop called “CRSPR/Cas9; The scissors of the DNA” addressing high school students as well as a game called “Bringing the pieces of life together” addressing junior high school students. This initiative aimed at introducing students to the world of Synthetic Biology in an interactive way, but also to one of its most groundbreaking tools; CRSPR/Cas9.</p>
+					<p class="text-faded mb-4">By participating in our activities students also got the opportunity to become familiar with the Igem competition and to discuss with us their thoughts regarding various problems that we face nowadays.</p>
+					<p class="text-faded mb-4">The future Synthetic Biologists are ready to follow their dreams…we look forward to it.</p>
+				</div>
+				</div>
+			</div>
+		</div>
+	  
+	  
+	  	  <br><br>
+		<div class="row no-gutters mx-auto">
+			<div class="card bg-primary text-center">
+			<br>
+			
+			<div class="my_slideshow-container">
+
+				<div class="my_mySlides my_fade">
+				  <img src="img/news/4/l.png" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+
+				<div class="my_mySlides my_fade">
+				  <img src="img/news/4/m.png" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+				
+				<div class="my_mySlides my_fade">
+				  <img src="img/news/4/n.png" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+
+				<div class="my_mySlides my_fade">
+				  <img src="img/news/4/o.png" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+
+			</div>
+			
+			<div style="text-align:center">
+			  <span class="my_dot"></span> 
+			  <span class="my_dot"></span> 
+			  <span class="my_dot"></span> 
+			  <span class="my_dot"></span> 
+			</div>
+			
+				<br>
+				<div class="row no-gutters">
+				<div class="col-lg-8 mx-auto text-center">
+					<h5 class="section-heading text-white" style="text-align:center">22-2-2019</h5>
+					<hr class="light my-1">
+					<h3 class="section-heading text-white">Participation in the seminar "Communication of Science" in the framework of the MSc "Applications of Molecular Biology - Genetics".</h1>
+					<br>
+					<p class="text-faded mb-4">On the 21st and 22nd of February, our team took part in the science communication seminar held by SciCo in collaboration with the MSc of the Department of Biochemistry and Biotechnology "Applications of Molecular Biology - Genetics".</p>
+					<p class="text-faded mb-4">Our team was introduced to the world of science communication through innovative, interactive and entertaining methods by SciCo scientists Kyriazi Julie and Aggelopoulos Giorgos at the Department of Biochemistry and Biotechnology.</p>
+					<p class="text-faded mb-4">Through the seminar, we learned experientially the factors influencing the transmission of information between a group of people, while participating in creative exercises and discussions.</p>
+				</div>
+				</div>
+			</div>
+		</div>
+		
+		
+	  	  <br><br>
+		<div class="row no-gutters mx-auto">
+			<div class="card bg-primary text-center">
+			<br>
+			
+			<div class="my_slideshow-container">
+
+				<div class="my_mySlides5 my_fade">
+				  <img src="img/news/3/g.png" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+
+				<div class="my_mySlides5 my_fade">
+				  <img src="img/news/3/h.png" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+				
+				<div class="my_mySlides5 my_fade">
+				  <img src="img/news/3/k.png" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+
+			</div>
+			
+			<div style="text-align:center">
+			  <span class="my_dot5"></span> 
+			  <span class="my_dot5"></span> 
+			  <span class="my_dot5"></span> 
+			</div>
+			
+				<br>
+				<div class="row no-gutters">
+				<div class="col-lg-8 mx-auto text-center">
+					<h5 class="section-heading text-white" style="text-align:center">1-2-2019</h5>
+					<hr class="light my-1">
+					<h3 class="section-heading text-white">Follow-up of the scientific conference "Human Rights and Refugees"</h1>
+					<br>
+					<p class="text-faded mb-4">On February 1st of 2019, our team attended the scientific conference “Human Rights and Refugees” that was organized by the Bar Association of Larisa. During the conference the speakers analyzed the situation that exists in Greece and more specifically in Thessaly about the Refugee Crisis and the developments that have been done up to the present time. In the end of the conference we had the honor of discussing with the Associate of United Nations High Commissioner for Refugees and lawyer Eleni Bletsa about the current problems of medical care of refugees and the need to develop a fast and cheap tuberculosis diagnostic test in hotspots. </p>
+				</div>
+				</div>
+			</div>
+		</div>
+	  
+	  
+	  <br><br>
+		<div class="row no-gutters mx-auto">
+			<div class="card bg-primary text-center">
+			<br>
+			
+			<div class="my_slideshow-container">
+
+				<div class="my_mySlides2 my_fade">
+				  <img src="img/news/2/d.png" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+
+				<div class="my_mySlides2 my_fade">
+				  <img src="img/news/2/e.png" style="max-height:30vh; max-width:50vw">
+				  <div class="my_text"></div>
+				</div>
+				
+				<div class="my_mySlides2 my_fade">
+				  <img src="img/news/2/f.png" style="max-height:30vh; max-width:50vw">
+				  <div class="my_text"></div>
+				</div>
+
+			</div>
+			
+			<div style="text-align:center">
+			  <span class="my_dot2"></span> 
+			  <span class="my_dot2"></span> 
+			  <span class="my_dot2"></span> 
+			</div>
+			
+				<br>
+				<div class="row no-gutters">
+				<div class="col-lg-8 mx-auto text-center">
+					<h5 class="section-heading text-white" style="text-align:center">25-11-2018</h5>
+					<hr class="light my-1">
+					<h3 class="section-heading text-white">Participation at the 69th conference of Biochemistry and Molecular biology at Larisa</h1>
+					<br>
+					<p class="text-faded mb-4">From November 22nd to November 25th, 2018, our team participated in the Young Scientists’ Forum (YSF) and was presented at the Panhellenic Conference of the Hellenic Society of Biochemistry and Molecular Biology (EHMB).</p>
+					<p class="text-faded mb-4">At the 69th Conference of Biochemistry and Molecular Biology we distributed information brochures through which the scientific community was better acquainted with the iGEM competition and iGEM Thessaly 2019. The attendants were eager to answer our questionnaire: “Keeping up with the iGEMers” which was created in order to collect the views of the scientific community about the problems that plague our world. In addition, we attended interesting speeches and we came in touch with distinguished scientists who advised us in our first steps.</p>
+				</div>
+				</div>
+			</div>
+		</div>
+	  
+	  <br><br>
+		<div class="row no-gutters mx-auto">
+			<div class="card bg-primary text-center">
+			<br>
+			
+			<div class="my_slideshow-container">
+
+				<div class="my_mySlides3 my_fade">
+				  <img src="img/news/1/a.png" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+
+				<div class="my_mySlides3 my_fade">
+				  <img src="img/news/1/b.png" style="max-height:30vh; max-width:80vw">
+				  <div class="my_text"></div>
+				</div>
+
+				<div class="my_mySlides3 my_fade">
+				  <img src="img/news/1/c.png" style="max-height:30vh; max-width:85vw">
+				  <div class="my_text"></div>
+				</div>
+
+			</div>
+			
+			<div style="text-align:center">
+			  <span class="my_dot3"></span> 
+			  <span class="my_dot3"></span> 
+			  <span class="my_dot3"></span> 
+			</div>
+			
+				<br>
+				<div class="row no-gutters">
+				<div class="col-lg-8 mx-auto text-center">
+					<h5 class="section-heading text-white" style="text-align:center">21-11-2018</h5>
+					<hr class="light my-1">
+					<h3 class="section-heading text-white">Presentation of our team on the annual meeting of OMIC-ENGINE</h1>
+					<br>
+					<p class="text-faded mb-4">Οn the 21st of November,2018 our team participated in the annual meeting organized by the national research infrastructure “Omic Engine” in the Department of Medicine of the University of Thessaly. We were given the opportunity to present our team and exchange views and ideas with professors - members of the infrastructure from 8 Universities from all over our country.</p>
+				</div>
+				</div>
+			</div>
+		</div>
+		
+	  </div>
+	</section>
+	</header>
+	
+	<div class="col-lg-3 ml-auto text-center">
+		<i class="fas fa-copyright fa-1x mb-3 text-primary"> iGEM Thessaly 2019</i>
+	</div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+	
+	
+	
+	<script>
+	var slideIndex = 0;
+	showSlides();
+	
+	var slideIndex2 = 0;
+	showSlides2();
+	
+	var slideIndex3 = 0;
+	showSlides3();
+
+	var slideIndex4 = 0;
+	showSlides4();
+	
+	var slideIndex5 = 0;
+	showSlides5();
+	
+	var slideIndex6 = 0;
+	showSlides6();
+	
+	var slideIndex7 = 0;
+	showSlides7();
+	
+	var slideIndex8 = 0;
+	showSlides8();
+	
+	var slideIndex9 = 0;
+	showSlides9();
+	
+	var slideIndex10 = 0;
+	showSlides10();
+	
+	var slideIndex11 = 0;
+	showSlides11();
+	
+	var slideIndex12 = 0;
+	showSlides12();
+	
+	var slideIndex13 = 0;
+	showSlides13();
+
+
+	function showSlides() {
+	  var i;
+	  var slides = document.getElementsByClassName("my_mySlides");
+	  var dots = document.getElementsByClassName("my_dot");
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	  }
+	  slideIndex++;
+	  if (slideIndex > slides.length) {slideIndex = 1}    
+	  for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" my_active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " my_active";
+	  setTimeout(showSlides, 3000); // Change image every 2 seconds
+	}
+	
+	function showSlides2() {
+	  var i;
+	  var slides = document.getElementsByClassName("my_mySlides2");
+	  var dots = document.getElementsByClassName("my_dot2");
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	  }
+	  slideIndex2++;
+	  if (slideIndex2 > slides.length) {slideIndex2 = 1}    
+	  for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" my_active", "");
+	  }
+	  slides[slideIndex2-1].style.display = "block";  
+	  dots[slideIndex2-1].className += " my_active";
+	  setTimeout(showSlides2, 3000); // Change image every 2 seconds
+	}
+	
+	function showSlides3() {
+	  var i;
+	  var slides = document.getElementsByClassName("my_mySlides3");
+	  var dots = document.getElementsByClassName("my_dot3");
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	  }
+	  slideIndex3++;
+	  if (slideIndex3 > slides.length) {slideIndex3 = 1}    
+	  for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" my_active", "");
+	  }
+	  slides[slideIndex3-1].style.display = "block";  
+	  dots[slideIndex3-1].className += " my_active";
+	  setTimeout(showSlides3, 3000); // Change image every 2 seconds
+	}
+	
+	function showSlides4() {
+	  var i;
+	  var slides = document.getElementsByClassName("my_mySlides4");
+	  var dots = document.getElementsByClassName("my_dot4");
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	  }
+	  slideIndex4++;
+	  if (slideIndex4 > slides.length) {slideIndex4 = 1}    
+	  for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" my_active", "");
+	  }
+	  slides[slideIndex4-1].style.display = "block";  
+	  dots[slideIndex4-1].className += " my_active";
+	  setTimeout(showSlides4, 3000); // Change image every 2 seconds
+	}
+	
+	function showSlides5() {
+	  var i;
+	  var slides = document.getElementsByClassName("my_mySlides5");
+	  var dots = document.getElementsByClassName("my_dot5");
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	  }
+	  slideIndex5++;
+	  if (slideIndex5 > slides.length) {slideIndex5 = 1}    
+	  for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" my_active", "");
+	  }
+	  slides[slideIndex5-1].style.display = "block";  
+	  dots[slideIndex5-1].className += " my_active";
+	  setTimeout(showSlides5, 3000); // Change image every 2 seconds
+	}
+	
+	function showSlides6() {
+	  var i;
+	  var slides = document.getElementsByClassName("my_mySlides6");
+	  var dots = document.getElementsByClassName("my_dot6");
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	  }
+	  slideIndex6++;
+	  if (slideIndex6 > slides.length) {slideIndex6 = 1}    
+	  for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" my_active", "");
+	  }
+	  slides[slideIndex6-1].style.display = "block";  
+	  dots[slideIndex6-1].className += " my_active";
+	  setTimeout(showSlides6, 3000); // Change image every 2 seconds
+	}
+	
+	function showSlides7() {
+	  var i;
+	  var slides = document.getElementsByClassName("my_mySlides7");
+	  var dots = document.getElementsByClassName("my_dot7");
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	  }
+	  slideIndex7++;
+	  if (slideIndex7 > slides.length) {slideIndex7 = 1}    
+	  for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" my_active", "");
+	  }
+	  slides[slideIndex7-1].style.display = "block";  
+	  dots[slideIndex7-1].className += " my_active";
+	  setTimeout(showSlides7, 3000); // Change image every 2 seconds
+	}
+	
+	function showSlides8() {
+	  var i;
+	  var slides = document.getElementsByClassName("my_mySlides8");
+	  var dots = document.getElementsByClassName("my_dot8");
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	  }
+	  slideIndex8++;
+	  if (slideIndex8 > slides.length) {slideIndex8 = 1}    
+	  for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" my_active", "");
+	  }
+	  slides[slideIndex8-1].style.display = "block";  
+	  dots[slideIndex8-1].className += " my_active";
+	  setTimeout(showSlides8, 3000); // Change image every 2 seconds
+	}
+	
+	function showSlides9() {
+	  var i;
+	  var slides = document.getElementsByClassName("my_mySlides9");
+	  var dots = document.getElementsByClassName("my_dot9");
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	  }
+	  slideIndex9++;
+	  if (slideIndex9 > slides.length) {slideIndex9 = 1}    
+	  for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" my_active", "");
+	  }
+	  slides[slideIndex9-1].style.display = "block";  
+	  dots[slideIndex9-1].className += " my_active";
+	  setTimeout(showSlides9, 3000); // Change image every 2 seconds
+	}
+	
+	function showSlides10() {
+	  var i;
+	  var slides = document.getElementsByClassName("my_mySlides10");
+	  var dots = document.getElementsByClassName("my_dot10");
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	  }
+	  slideIndex10++;
+	  if (slideIndex10 > slides.length) {slideIndex10 = 1}    
+	  for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" my_active", "");
+	  }
+	  slides[slideIndex10-1].style.display = "block";  
+	  dots[slideIndex10-1].className += " my_active";
+	  setTimeout(showSlides10, 3000); // Change image every 2 seconds
+	}
+	
+	function showSlides11() {
+	  var i;
+	  var slides = document.getElementsByClassName("my_mySlides11");
+	  var dots = document.getElementsByClassName("my_dot11");
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	  }
+	  slideIndex11++;
+	  if (slideIndex11 > slides.length) {slideIndex11 = 1}    
+	  for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" my_active", "");
+	  }
+	  slides[slideIndex11-1].style.display = "block";  
+	  dots[slideIndex11-1].className += " my_active";
+	  setTimeout(showSlides11, 3000); // Change image every 2 seconds
+	}
+	
+	function showSlides12() {
+	  var i;
+	  var slides = document.getElementsByClassName("my_mySlides12");
+	  var dots = document.getElementsByClassName("my_dot12");
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	  }
+	  slideIndex12++;
+	  if (slideIndex12 > slides.length) {slideIndex12 = 1}    
+	  for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" my_active", "");
+	  }
+	  slides[slideIndex12-1].style.display = "block";  
+	  dots[slideIndex12-1].className += " my_active";
+	  setTimeout(showSlides12, 3000); // Change image every 2 seconds
+	}
+	
+	function showSlides13() {
+	  var i;
+	  var slides = document.getElementsByClassName("my_mySlides13");
+	  var dots = document.getElementsByClassName("my_dot13");
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	  }
+	  slideIndex13++;
+	  if (slideIndex13 > slides.length) {slideIndex13 = 1}    
+	  for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" my_active", "");
+	  }
+	  slides[slideIndex13-1].style.display = "block";  
+	  dots[slideIndex13-1].className += " my_active";
+	  setTimeout(showSlides13, 3000); // Change image every 2 seconds
+	}
+
+	</script>
+	
+
+  </body>
+
+</html>
+

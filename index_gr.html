@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+	<link rel="icon" type="png" href="img/logo/iGEM_Thessaly_2019_logo.png">
+    <title>iGEM Thessaly</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.min.css" rel="stylesheet">
+	
+<style>
+	.my-v-header{
+	  height:100vh;
+	  display:flex;
+	  align-items:center;
+	  color:#fff;
+	}
+
+	.my-container{
+	  align-items:center;
+	  margin:auto;
+	}
+
+	.my-fullscreen-video-wrap{
+	  position:absolute;
+	  top:0;
+	  left:0;
+	  width:98.65vw;
+	  height:100vh;
+	  overflow:hidden;
+	}
+
+	.my-fullscreen-video-wrap video{
+	  min-height:100%;
+	  min-width:100%;
+	}
+
+	.my-header-overlay{
+	  height:100vh;
+	  position: absolute;
+	  top:0;
+	  left:0;
+	  width:98.65vw;
+	  z-index:1;
+	  background:transparent;
+	  opacity:1;
+	}
+
+	.my-header-content{
+	  padding-top:128px;
+	  z-index:2;
+	}
+	
+	
+	.my_mySlides {display: none;}
+
+	/* Slideshow container */
+	.my_slideshow-container {
+	  max-width: 1000px;
+	  position: relative;
+	  margin: auto;
+	}
+
+	/* Caption text */
+	.my_text {
+	  color: #f2f2f2;
+	  font-size: 15px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  bottom: 8px;
+	  width: 100%;
+	  text-align: center;
+	}
+
+	/* Number text (1/3 etc) */
+	.my_numbertext {
+	  color: #f2f2f2;
+	  font-size: 12px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  top: 0;
+	}
+
+	/* The dots/bullets/indicators */
+	.my_dot {
+	  height: 15px;
+	  width: 15px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+
+	.my_active {
+	  background-color: #717171;
+	}
+
+	/* Fading animation */
+	.my_fade {
+	  -webkit-animation-name: my_fade;
+	  -webkit-animation-duration: 2s;
+	  animation-name: my_fade;
+	  animation-duration: 2s;
+	}
+
+	@-webkit-keyframes my_fade {
+	  from {opacity: .5} 
+	  to {opacity: 1}
+	}
+
+	@keyframes my_fade {
+	  from {opacity: .5} 
+	  to {opacity: 1}
+	}
+</style>
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/logo/iGEM_Thessaly_2019_logo.png" width="75px"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#page-top" style="font-size: 13px; padding-top:23px;">ΑΡΧΙΚΗ</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#news" style="font-size: 13px; padding-top:23px;">ΝΕΑ</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#comp" style="font-size: 13px; padding-top:23px;">ΔΙΑΓΩΝΙΣΜΟΣ iGEM</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#team" style="font-size: 13px; padding-top:23px;">ΟΜΑΔΑ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#project" style="font-size: 13px; padding-top:23px;">ΕΡΓΟ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#support" style="font-size: 13px; padding-top:23px;">ΥΠΟΣΤΗΡΙΚΤΕΣ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact" style="font-size: 13px; padding-top:23px;">ΕΠΙΚΟΙΝΩΝΙΑ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="https://2019.igem.org/Team:Thessaly" target="_blank" style="font-size: 13px; padding-top:23px;">ODYSSEE</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index_gr.html" style="padding-top:20px;"><img src="img/lang/gr.png" width="20px"></a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.html" style="padding-top:20px;"><img src="img/lang/uk.png" width="20px"></a>
+			</li>
+			<li class="nav-item">
+			  <a href="http://www.uth.gr/" target="_blank"><img class="img-fluid" src="img/logo/logo.png" width="90px" alt=""></a>
+			</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead text-center d-flex" style="min-height: 100vh">
+      <div class="container my-auto">
+	  
+		<div class="row">
+		  <div class="col-lg-6 mx-auto">
+				<h1>
+					<strong class="text-primary">iGEM Thessaly 2019</strong>
+				</h1>
+				<hr>
+				<p class="text-primary mb-5" ><b>Η πρώτη διεπιστημονική ομάδα του Πανεπιστημίου Θεσσαλίας που θα λάβει μέρος στο διεθνή διαγωνισμό Συνθετικής Βιολογίας iGEM.</b></p>
+				<a class="btn btn-light btn-xl js-scroll-trigger" style="color: #0168B5; border: 2px solid black; border-color: #0168B5" href="#home">ΜΑΘΕΤΕ ΠΕΡΙΣΣΟΤΕΡΑ</a>
+				<a class="btn btn-primary btn-xl js-scroll-trigger" style="border: 2px solid black; border-color: #0168B5" href="https://2019.igem.org/Team:Thessaly" target="_blank">ΓΝΩΡΙΣΤΕ ΤΟ ODYSSEE</a>
+          </div>
+          <div class="col-lg-6 mx-auto">
+				<br>
+				<img src="img/team/0.jpg" style="width:100%">
+          </div>
+        </div>
+		
+      </div>
+    </header>
+	
+	<header class="masthead text-center  mx-auto" id="home">
+	<section class=""  style="min-height: 100vh; padding-top: 30vh">
+      <div class="container-fluid p-0 my-auto">
+        <div class="row no-gutters popup-gallery">
+          <div class="col-lg-4 col-sm-6 mx-auto">
+            <a class="portfolio-box" href="img/home/1.png">
+              <img class="img-fluid" src="img/portfolio/thumbnails/bioo.png" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    
+                  </div>
+                  <div class="project-name">
+                    Η Συνθετική Βιολογία
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6 mx-auto">
+            <a class="portfolio-box" href="img/home/2.png">
+              <img class="img-fluid" src="img/portfolio/thumbnails/target.png" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    
+                  </div>
+                  <div class="project-name">
+                    Οι Στόχοι μας
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+		  <div class="col-lg-4 col-sm-6 mx-auto">
+            <a class="portfolio-box" href="img/home/3.png">
+              <img class="img-fluid" src="img/portfolio/thumbnails/but.png" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    
+                  </div>
+                  <div class="project-name">
+                    Το Φαινόμενο της πεταλούδας
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+		</div>
+      </div>
+    </section>
+	</header>
+	
+	<section id="news" style="min-height: 100vh; background-color: aliceblue">
+      <div class="container" >
+	  <br><br><br><br><br>
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">Τα νέα μας</h2>
+            <hr class="my-4">
+			<p class="text mb-4">Ενημερωθείτε για τις δράσεις και την πορεία της ομάδας μας!</p>
+			<a class="btn btn-primary btn-xl js-scroll-trigger" href="news_gr.html">ΟΛΑ ΤΑ ΝΕΑ ΜΑΣ ΜΕ ΕΝΑ ΚΛΙΚ...<a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-primary" id="comp" style="min-height: 100vh">
+      <div class="container">
+        <div class="row">
+		<br>
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading text-white">Λίγα λόγια για το διαγωνισμό iGEM </h2>
+            <hr class="light my-4">
+            <p class="text-faded mb-4">Ο διαγωνισμός iGEM (International Genetically Engineered Machine) είναι ένας διεθνής διαγωνισμός Συνθετικής Βιολογίας, η ιδέα του οποίου προέκυψε από την εργαστηριακή εργασία, που διοργανώθηκε στο MIT, από τους Tom Knight και Drew Endy κατά τη διάρκεια της περιόδου ανεξάρτητης δραστηριότητας του MIT το 2003 και το 2004. Έκτοτε η ιδέα του διαγωνισμού έχει εξαπλωθεί σε όλον τον κόσμο και κάθε χρόνο περισσότερες από 300 ομάδες και 6000 φοιτητές από πανεπιστήμια και σχολεία, αφιερώνουν το καλοκαίρι τους στο διαγωνισμό και το φθινόπωρο συναντιούνται στη Βοστώνη για να παρουσιάσουν το ερευνητικό τους έργο και να διαγωνιστούν στο Giant Jamboree. </p>
+            <p class="text-faded mb-4">Ο διαγωνισμός αποτελεί το κύριο πρόγραμμα του iGEM Foundation, έναν ανεξάρτητο, μη κερδοσκοπικό οργανισμό αφιερωμένο στην πρόοδο της Συνθετικής Βιολογίας και την εκπαίδευση με κύριο στόχο την ανάπτυξη μίας ανοιχτής κοινωνίας συνεργασίας. </p>
+			<p class="text-faded mb-4">Ο διαγωνισμός iGEM δίνει πρωτίστως σε φοιτητές και νέους ανθρώπους τη δυνατότητα να περάσουν τα όρια της Συνθετικής Βιολογίας για την επίλυση καίριων προβλημάτων του 21ου αιώνα. Σκοπός είναι οι φοιτητές να εργαστούν σε διεπιστημονικές ομάδες ώστε να σχεδιάσουν ένα βιολογικό σύστημα δικής τους δημιουργίας χρησιμοποιώντας θεμελιώδεις τεχνικές της Μοριακής Βιολογίας. Παράλληλα, κάθε ομάδα καλείται μέσα από τις δράσεις της να διασυνδέσει το έργο της με την κοινωνία. </p>
+			<hr class="light my-4">
+			<p class="text-faded mb-4">Ο φετινός διαγωνισμός iGEM 2019 θα διεξαχθεί στις 31 Οκτωβρίου - 4 Νοεμβρίου.</p>
+			
+			
+			<div class="my_slideshow-container">
+
+				<div class="my_mySlides my_fade">
+				  <div class="my_numbertext">1 / 3</div>
+				  <img src="img/comp/9.jpg" style="width:100%">
+				  <div class="my_text"></div>
+				</div>
+
+				<div class="my_mySlides my_fade">
+				  <div class="my_numbertext">2 / 3</div>
+				  <img src="img/comp/7.jpg" style="width:100%">
+				  <div class="my_text"></div>
+				</div>
+
+				<div class="my_mySlides my_fade">
+				  <div class="my_numbertext">3 / 3</div>
+				  <img src="img/comp/8.jpg" style="width:100%">
+				  <div class="my_text"></div>
+				</div>
+
+			</div>
+			<br>
+
+			<div style="text-align:center">
+			  <span class="my_dot"></span> 
+			  <span class="my_dot"></span> 
+			  <span class="my_dot"></span> 
+			</div>
+			
+			
+			<hr class="light my-4">
+			<a class="btn btn-light btn-xl js-scroll-trigger" href="http://igem.org/Main_Page" target="_blank">ΜΑΘΕΤΕ ΠΕΡΙΣΣΟΤΕΡΑ <br> ΓΙΑ ΤΟΝ ΔΙΑΓΩΝΙΣΜΟ</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" style="min-height: 100vh">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">Η ομάδα μας</h2>
+            <hr class="my-4">
+			<p class="text mb-4">Η ομάδα μας στελεχώνεται από δέκα φοιτητές από τέσσερα διαφορετικά τμήματα του Πανεπιστημίου Θεσσαλίας. Διαφορετικές ιδέες, σκέψεις, επιστημονικά ενδιαφέροντα και προσωπικότητες είναι τα βασικά στοιχεία της ομάδας μας.</p>
+			<p class="text mb-4">Είμαστε η iGEM Thessaly 2019, γνωρίστε μας!</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+		  <div class="col-lg-6 col-md-8 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fas fa-3x fa-microscope text-primary mb-3 sr-icon-1">
+				  <h3 class="mb-3">Team</h3>
+				  <p class="text-muted mb-0"><a class="btn btn-primary btn-xl js-scroll-trigger" href="team_gr.html">ΓΝΩΡΙΣΤΕ ΤΑ ΜΕΛΗ</a></p>
+              </i>
+			</div>
+          </div>
+          <div class="col-lg-6 col-md-8 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fas fa-3x fa-chalkboard-teacher text-primary mb-3 sr-icon-2">
+				  <h3 class="mb-3">Supervisors</h3>
+				  <p class="text-muted mb-0"><a class="btn btn-primary btn-xl js-scroll-trigger" href="supervisors_gr.html">ΓΝΩΡΙΣΤΕ ΤΑ ΜΕΛΗ</a></p>
+              </i>
+			</div>
+          </div>
+        </div>
+      </div>
+    </section>
+	
+	<section class="p-0" id="project" style="min-height: 100vh">
+		<div class="col-lg-8 text-center">
+			<header class="my-v-header my-container">
+				<div class="my-fullscreen-video-wrap">
+					<video autoplay muted loop>
+						<source src="video.mp4" type="video/mp4" style="max-width: 90vw">
+					</video>
+				</div>
+				<div class="my-header-overlay">
+					<div class="my-header-content text-mb-center ">
+						<br><br><br><br><br>
+						<h2 class="section-heading">Το έργο μας</h2>
+						<hr class="my-4">
+						<p class=" mb-4">Η ομάδα μας ακολουθώντας τις βάσεις και τις αρχές της Συνθετικής Βιολογίας εργάζεται για τη δημιουργία ενός εύχρηστου και αξιόπιστου τεστ για την έγκαιρη διάγνωση της φυματίωσης.</p>
+						<a class="btn btn-primary btn-xl js-scroll-trigger" href="project_gr.html">ΜΑΘΕΤΕ ΠΕΡΙΣΣΟΤΕΡΑ</a>
+					</div>
+				</div>
+			</header>
+		</div>
+    </section>
+	
+	<section id="support" style="min-height: 100vh">
+		<div class="container">
+		  <div class="row">
+			<div class="col-lg-8 mx-auto text-center">
+			  <h2 class="section-heading">With the support of:</h2>
+			  <hr class="my-4">
+			</div>
+		  </div>
+  
+				 <div class="row sr-contact-1">
+				  <div class="col-lg-6 ml-auto text-center">
+					  <br>
+					  <a href="https://www.omicengine.com/" target="_blank"><img class="img-fluid" src="img/LOGO/GOLD/omic engine.png" width="300px" alt=""></a>
+				  </div>
+				  <div class="col-lg-6 ml-auto text-center">
+					  <a href="https://www.iky.gr/el/" target="_blank"><img class="img-fluid" src="img/LOGO/GOLD//IKY.png" width="200px" alt=""></a>
+				  </div>
+			  </div>
+			  <br>
+			  <div class="row sr-contact-1">
+				  <div class="col-lg-3 ml-auto text-center">
+					  <a href="http://ee.uth.gr/" target="_blank"><img class="img-fluid" src="img/LOGO/BRONZE/1.png" width="150px" alt=""></a>
+				  </div>
+				  <div class="col-lg-3 ml-auto text-center">
+					  <a href="https://www.helpe.gr/" target="_blank"><img class="img-fluid" src="img/LOGO/BRONZE/61612.png" width="150px" alt=""></a>
+				  </div>
+				  <div class="col-lg-3 ml-auto text-center">
+					  <a href="https://www.elpen.gr/" target="_blank"><img class="img-fluid" src="img/LOGO/BRONZE/ΕΛΠΕΝ.png" width="150px" alt=""></a>
+				  </div>
+				  <div class="col-lg-3 ml-auto text-center">
+					  <br>
+					  <a href="https://www.novartis.gr/" target="_blank"><img class="img-fluid" src="img/LOGO/BRONZE/NOVARTIS.png" width="150px" alt=""></a>
+				  </div>
+			  </div>
+			  <br>
+			  <div class="row sr-contact-1">
+					<div class="col-lg-2 ml-auto text-center">
+						<a href="http://www.labsupplies.gr/" target="_blank"><img class="img-fluid" src="img/LOGO/BRONZE/2.png" width="100px" alt=""></a>
+					</div>
+					<div class="col-lg-2 ml-auto text-center">
+						<BR>
+						<a href="https://eu.idtdna.com/pages" target="_blank"><img class="img-fluid" src="img/LOGO/PARTNERS/HQ_IDT_logo.png" width="100px" alt=""></a>
+					</div>
+					<div class="col-lg-2 ml-auto text-center">
+						<BR>
+						<a href="https://www.mathworks.com/" target="_blank"><img class="img-fluid" src="img/LOGO/PARTNERS/MATHWORKS.png" width="100px" alt=""></a>
+					</div>
+					<div class="col-lg-2 ml-auto text-center">
+						<BR>
+						<a href="https://www.neb.com/" target="_blank"><img class="img-fluid" src="img/LOGO/PARTNERS/NEB_GmbH_logo.png" width="100px" alt=""></a>
+					</div>
+					<div class="col-lg-2 ml-auto text-center">
+						<BR>
+						<a href="https://www.snapgene.com/" target="_blank"><img class="img-fluid" src="img/LOGO/PARTNERS/SNAPGENE.png" width="100px" alt=""></a>
+					</div>
+					<div class="col-lg-2 ml-auto text-center">
+						<a href="https://twistbioscience.com/" target="_blank"><img class="img-fluid" src="img/LOGO/PARTNERS/Twist_Bioscience_Official_Logo.png" width="100px" alt=""></a>
+					</div>
+				</div>
+				<br>
+				<div class="row sr-contact-1">
+					<div class="col-lg-3 ml-auto text-center">
+						<a href="https://www.labfolder.com/" target="_blank"><img class="img-fluid" src="img/LOGO/PARTNERS/lf-logo-positive-tagline.png" width="80px" alt=""></a>
+					</div>
+					<div class="col-lg-3 ml-auto text-center">
+						<a href="http://bioline.gr.138-201-206-39.my-website-preview.com/" target="_blank"><img class="img-fluid" src="img/LOGO/supporters/BIOLINE LOGO.png" width="70px" alt=""></a>
+					</div>
+					<div class="col-lg-3 ml-auto text-center">
+						<a href="https://www.minetta.gr/el/normal/Home" target="_blank"><img class="img-fluid" src="img/LOGO/supporters/2.png" width="50px" alt=""></a>
+					</div>
+					<div class="col-lg-3 ml-auto text-center">
+						<a href="" target="_blank"><img class="img-fluid" src="img/LOGO/supporters/1.jpg" width="70px" alt=""></a>
+					</div>
+				</div>
+  
+		</div>
+	  </section>
+
+    <section id="contact" style="min-height: 100vh">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">Επικοινωνήστε μαζί μας</h2>
+            <hr class="my-4">
+            <p class="mb-5">Για περισσότερες πληροφορίες μη διστάσετε να επικοινωνήσετε μαζί μας με οποιοδήποτε τρόπο!</p>
+          </div>
+        </div>
+        <div class="row sr-contact-1">
+			<div class="col-lg-4 ml-auto text-center">
+				<i class="fas fa-phone fa-3x text-primary mb-3 sr-contact-1"></i>
+				<p>6986608671 | 6970562073</p>
+			</div>
+			<div class="col-lg-4 ml-auto text-center">
+				<i class="fas fa-landmark fa-3x text-primary mb-3 sr-contact-2"></i>
+				<p>Biopolis, Larissa, 41500</p>
+			</div>
+			<div class="col-lg-4 mr-auto text-center">
+				<i class="fas fa-envelope fa-3x text-primary mb-3 sr-contact-3"></i>
+				<p>
+					<a href="mailto:igem.thessaly@gmail.com">igem.thessaly@gmail.com</a>
+				</p>
+			</div>
+        </div>
+		<div class="row sr-contact-2">
+			<div class="col-lg-3 ml-auto text-center">
+				<i class="sr-contact-1"><img src="img/logo/facebook mple.png" width="50px" alt=""></i>
+				<p>
+					<a href="https://www.facebook.com/igemthessaly/?epa=SEARCH_BOX" target="_blank">iGEM Thessaly</a>
+				</p>
+			</div>
+			<div class="col-lg-3 mr-auto text-center">
+				<i class="sr-contact-1"><img src="img/logo/ss.png" width="50px" alt=""></i>
+				<p>
+					<a href="https://www.instagram.com/igemthessaly/?hl=el" target="_blank">igemthessaly</a>
+				</p>
+			</div>
+			<div class="col-lg-3 mr-auto text-center">
+				<i class="sr-contact-1"><img src="img/logo/60580mple.png" width="50px" alt=""></i>
+				<p>
+					<a href="https://twitter.com/igemthessaly?lang=en" target="_blank">igemthessaly</a>
+				</p>
+			</div>
+			<div class="col-lg-3 mr-auto text-center">
+				<i class="sr-contact-1"><img src="img/logo/24727-4-youtube-play-buttomplen-hd-thumb.png" width="50px" alt=""></i>
+				<p>
+					<a href="https://www.youtube.com/channel/UCBHXzFL7r9xxHxqQICznphA" target="_blank">iGEM Thessaly</a>
+				</p>
+			</div>
+        </div>
+      </div>
+    </section>
+	
+	<div class="col-lg-3 ml-auto text-center">
+		<i class="fas fa-copyright fa-1x mb-3 text-primary"> iGEM Thessaly 2019</i>
+	</div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+	
+	
+	<script>
+	var slideIndex = 0;
+	showSlides();
+
+	function showSlides() {
+	  var i;
+	  var slides = document.getElementsByClassName("my_mySlides");
+	  var dots = document.getElementsByClassName("my_dot");
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	  }
+	  slideIndex++;
+	  if (slideIndex > slides.length) {slideIndex = 1}    
+	  for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" my_active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " my_active";
+	  setTimeout(showSlides, 3000); // Change image every 2 seconds
+	}
+	</script>
+
+  </body>
+
+</html>
